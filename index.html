@@ -3,8 +3,487 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://kit.fontawesome.com/dfba2503ab.js" crossorigin="anonymous"></script>
+
 </head>
+<style>
+    .levimeni {
+        background-color: #222e3c;
+        height: 100%;
+        width: 15%;
+        color: white;
+        padding: 10px;
+    }
+    .levimeni ul{
+        padding-bottom: 15px;
+    }
+    .levimeni li{
+        margin-bottom: 10px;
+    }
+
+    .dot {
+        height: 20px;
+        width: 30px;
+        background-color: #3b7ddd;
+        border-radius: 25%;
+        display: inline-block;
+        color: white;
+        padding: 1px;
+        margin-left: 5px;
+
+    }
+
+    .searchBar {
+        width: 100%;
+        height: 20px;
+        background-color: #f3f6fa;
+        border-radius: 15px 15px;
+        display: inline-block;
+        border: 10px;
+        padding-bottom: 10px;
+        margin-top: 15px;
+
+    }
+
+    .searchBar p {
+        margin-top: -15px;
+        margin-left: 10px;
+
+
+    }
+
+    .fa-arrow-down {
+        margin-left: 5px;
+    }
+
+    .fa-search {
+        align-content: center;
+        color: gray;
+        margin-top: 6px;
+        padding-left: 80%;
+    }
+
+    .fa-bars {
+        width: 50%;
+        height: 100%;
+    }
+
+    .search {
+        padding-bottom: 15px;
+    }
+
+    .slika {
+        width: 5%;
+        border-radius: 5px;
+    }
+
+    .fa-bell {
+        margin-right: 10%;
+    }
+
+    .fa-comment-alt {
+        margin-right: 10%;
+    }
+
+    .fa-flag-usa {
+        margin-right: 10%;
+    }
+
+    .fa-expand {
+        margin-right: 10%;
+    }
+
+    tbody ul {
+        padding-left: 6px;
+    }
+
+    tbody li {
+        font-family: "Arial Nova";
+        padding-bottom: 10px;
+        font-style: italic;
+        color: dimgrey;
+
+    }
+
+    .levimeni li:hover {
+        color: white;
+
+    }
+
+    tbody i {
+        margin-right: 10px;
+        size: 5px;
+    }
+    tbody td{
+        font-family: "Arial Nova";
+    }
+    .gumb{
+        background-color: cornflowerblue;
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 5px;
+        color: white;
+
+    }
+    .okencek td{
+        border-radius: 5px;
+    }
+    .okencek ul{
+        list-style-type: none;
+        padding-bottom: 0px;
+    }
+    .okvirck{
+        width: 40px;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 12px;
+        text-align: center;
+        padding: 5px;
+        margin-right: 5px;
+        color: white;
+
+    }
+    .zgornjimeni{
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+
+
+    }
+    .zgornjimeni ul{
+        margin: 0;
+        padding-top: 0;
+        vertical-align: text-top;
+    }
+
+    .fa-arrow-right {
+        float: right;
+        padding-top: 10px;
+    }
+    .fa-arrow-left{
+        float: left;
+        padding-top: 18px;
+    }
+
+    .weeks{
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+        background-color: mediumseagreen;
+
+
+    }
+    .weeks ul{
+        vertical-align: top;
+    }
+    .weeks li{
+        display: inline-block;
+        width: 12.6%;
+        color: #666;
+        text-align: center;
+        color: white;
+        border-left: 1px solid;
+
+    }
+    .days{
+        list-style-type: none;
+
+    }
+    .days ul{
+        vertical-align: top;
+    }
+    .days li {
+        display: inline-block;
+        width: 12.6%;
+        color: #666;
+        text-align: center;
+    }
+    .fa-ellipsis-h{
+        float: right;
+    }
+    .predelnica{
+
+    }
+    .predelnica ul{
+        list-style-type: none;
+    }
+    .predelnica p{
+        margin-top: 0;
+        font-size: 10px;
+    }
+
+
+
+
+</style>
 <body>
+<table border="0" width="100%" cellspacing="0">
+    <thead>
+    <tr>
+        <td class="levimeni">
+            <p style="">AdmitKit <span class="dot">Pro</span></p>
+
+        </td>
+        <td height="5%" width="1%"><i class="fas fa-bars"></i></td>
+        <td height="5%" width="15%" class="search">
+            <div class="searchBar"><i class="fas fa-search"></i>
+                <p>Search...</p></div>
+        </td>
+        <td height="5%" width="10%"><p width="100%">Mega menu<i class="fas fa-arrow-down"></i></p></td>
+        <td height="5%" width="30%"></td>
+        <td height="5%" align="right">
+            <div><i class="far fa-bell"></i><i class="far fa-comment-alt"></i><i class="fas fa-flag-usa"></i><i
+                    class="fas fa-expand"></i> <img class="slika" src="media/profilna.jpg"></div>
+        </td>
+    </tr>
+
+    </thead>
+    <tbody>
+
+
+    <tr valign="top">
+        <td class="levimeni">
+            <ul style="list-style-type: none">
+                <li>Pages
+                    <ul style="list-style-type: none">
+                        <li><i class="fas fa-sliders-h"></i>Dashboards</li>
+                        <li><i class="fas fa-columns"></i>Pages</li>
+                        <li><i class="fas fa-user-alt"></i>Profile</li>
+                        <li><i class="far fa-file-alt"></i>Invoice</li>
+                        <li><i class="fas fa-tasks"></i>Task<span class="dot">Pro</span></li>
+                        <li><i class="fas fa-calendar-week"></i>Calendar<span class="dot">Pro</span></li>
+
+                    </ul>
+                </li>
+                <br>
+                <li>Componenents
+                    <ul style="list-style-type: none">
+                        <li><i class="fas fa-suitcase"></i>UI elements</li>
+                        <li><i class="fas fa-icons"></i>Icons</li>
+                        <li><i class="fab fa-wpforms"></i>Forms</li>
+                        <li><i class="fas fa-table"></i>Tables</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Plugins & Addons
+                    <ul style="list-style-type: none">
+                        <li><i class="fab fa-wpforms"></i>Form plugins</li>
+                        <li><i class="fas fa-table"></i>Data tables</li>
+                        <li><i class="fas fa-chart-line"></i>Chart</li>
+                        <li><i class="far fa-bell"></i>Notifications</li>
+                        <li><i class="far fa-map"></i>Maps</li>
+                        <li><i class="fas fa-layer-group"></i>Multi levels</li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </td>
+        <td colspan="5" valign="top" height="100%"  >
+            <table border="0" width="100%" height="50" cellspacing="15" bgcolor="#f5f7fb" >
+                <tr bgcolor="#f5f7fb">
+                    <td height="20%" width="30%"><p><b>Analytics</b> Dashboard</p></td>
+                    <td width="30%"></td>
+                    <td class="gumb" align="middle" width="20%">Invite a Friend</td>
+                    <td class="gumb" align="middle" width="20%">New project</td>
+                </tr>
+                <tr height="250" bgcolor="white">
+                    <td width="40%">
+                        <table width="100%" height="100%" border="0" class="okencek" cellspacing="10px" bgcolor="#f5f7fb" >
+                            <tr valign="top" bgcolor="white" >
+                                <td width="50%" height="50%" >
+                                    <ul >
+                                        <li>Sales</li>
+                                        <li><b>2.382</b></li>
+                                        <li><span class="okvirck" style="background-color: #fa1e3f"  >-3.65%</span> <span>Since last week</span></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul >
+                                        <li>Earnings</li>
+                                        <li><b>$21.300</b></li>
+                                        <li><span class="okvirck" style="background-color: mediumseagreen"  >6.65%</span> <span>Since last week</span></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr valign="top" bgcolor="white">
+                                <td>
+                                    <ul >
+                                        <li>Visitors</li>
+                                        <li><b>14.212</b></li>
+                                        <li><span class="okvirck" style="background-color: mediumseagreen"  >5.25%</span> <span>Since last week</span></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul >
+                                        <li>Orders</li>
+                                        <li><b>64</b></li>
+                                        <li><span class="okvirck" style="background-color: #fa1e3f"  >-2.25%</span> <span>Since last week</span></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="60%" colspan="2">
+                        <table border="0" width="100%" height="100%">
+                            <tr height="15%">
+                                <td>Recent movements</td>
+                                <td ></td>
+                                <td style="float: right"><span class="okvirck" style="background-color: lightgrey">jan</span><span class="okvirck" style="background-color: lightgrey">Search...</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><img width="100%" src="media/chart.png"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr width="100%" bgcolor="white" >
+                    <td height="250" width="25%">
+                        <div>
+                            <ul class="zgornjimeni">
+                                <li style="text-align: left"><b>Calendar</b></li>
+                                <li><i class="fas fa-arrow-left"></i></li>
+                                <li><i class="fas fa-arrow-right"></i></li>
+                                <li>December 2021</li>
+                            </ul>
+                        </div>
+                        <ul class="weeks">
+                            <li>Su</li>
+                            <li>Mo</li>
+                            <li>Tu</li>
+                            <li>We</li>
+                            <li>Th</li>
+                            <li>Fr</li>
+                            <li>Sa</li>
+                        </ul>
+                        <ul class="days">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                        </ul>
+                    </td>
+                    <td width="50%">
+                        <ul style="list-style-type: none">
+                            <li>Real time</li>
+                            <li><iframe  width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216875.0538038633!2d14.790732217942232!3d46.063017398987334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47653119d9aebd3d%3A0x2dc4617703f28a87!2sZabor%C5%A1t%20pri%20Dolu%2045%2C%201262%20Dol%20pri%20Ljubljani!5e0!3m2!1ssl!2ssi!4v1638959301427!5m2!1ssl!2ssi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+                        </ul>
+                    </td>
+                    <td width="25%" style="vertical-align: top">
+                        <ul style="list-style-type: none" class="tortnigraf" >
+                            <li><i class="fas fa-ellipsis-h"></i>Browser usage</li>
+                            <li><img src="media/tortnigraf.png"></li>
+                            <li>Chrome <span  class="okvirck" style="background-color: mediumseagreen">+12%</span><span style="float: right">4306</span></li>
+                            <li>Firefox <span  class="okvirck" style="background-color: #fa1e3f">-3%</span><span style="float: right">3801</span></li>
+                            <li>Edge<span style="float: right">3801</span></li>
+                            <li>Other<span style="float: right">3801</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="250" width="70%" colspan="2" class="predelnica" valign="top">
+                        <table border="0" width="100%" style="padding: 0px" >
+                            <tr >
+                                <td style="vertical-align: top">
+                                    <ul >
+                                        <li>Class</li>
+                                        <li><b>Project Apollo</b><p>Web, UI/UX Design</p></li>
+                                        <li><b>Project Bongo</b><p>Web</p></li>
+                                        <li><b>Project Canary</b><p>Web, UI/UX Design</p></li>
+                                        <li><b>Project Edison</b><p></p>UI/UX Design</p></li>
+                                        <li><b>Project Indigo</b><p>Web, UI/UX Design</p></li>
+                                    </ul>
+                                </td>
+                                <td style="vertical-align: top"> <ul >
+                                    <li>Company</li>
+                                    <li><b>Lechters</b><p>Real Estate</p></li>
+                                    <li><b>Cellophane Transportation</b><p>Transportation</p></li>
+                                    <li><b>Clemens</b><p>Insurance</p></li>
+                                    <li><b>Affinity Investment Group</b><p></p>Finance</p></li>
+                                    <li><b>Konsili</b><p>Retail</p></li>
+                                </ul>
+                                </td>
+                                <td style="vertical-align: top"> <ul >
+                                    <li>Author</li>
+                                    <li><b>Vanessa Tucker</b><p>HTML, JS, React</p></li>
+                                    <li><b>William Harris</b><p>HTML, JS, Vue</p></li>
+                                    <li><b>Sharon Lessman</b><p>HTML, JS, Laravel</p></li>
+                                    <li><b>Vanessa Tucker</b><p></p>HTML, JS, React</p></li>
+                                    <li><b>Project Indigo</b><p>HTML, JS, Vue</p></li>
+                                </ul>
+                                </td>
+                                <td style="vertical-align: top"> <ul >
+                                    <li>Status</li>
+                                    <li><b>65%</b><p>Web, UI/UX Design</p></li>
+                                    <li><b>33%</b><p>Web</p></li>
+                                    <li><b>50%</b><p>Web, UI/UX Design</p></li>
+                                    <li><b>80%</b><p></p>UI/UX Design</p></li>
+                                    <li><b>78%</b><p>Web, UI/UX Design</p></li>
+                                </ul>
+                                </td>
+                                <td style="vertical-align: top"> <ul >
+                                    <li>Action</li>
+                                    <li><b>View</b><p></p></li>
+                                    <li><b>View</b><p></p></li>
+                                    <li><b>View</b><p></p></li>
+                                    <li><b>View</b><p></p></p></li>
+                                    <li><b>View</b><p></p></li>
+                                </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="30%" valign="top">
+                        <ul style="list-style-type: none">
+                            <li >Monthly sale<i class="fas fa-ellipsis-h"></i></li>
+                            <li><img src="media/graf1.png"></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+
+    </tr>
+
+
+
+
+
+
+    </tbody>
+
+</table>
 
 </body>
 </html>
